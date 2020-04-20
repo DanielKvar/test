@@ -7,14 +7,25 @@ public class Opravilo {
     private String Opis;
     private LocalDate StartDate;
     private LocalDate EndDate;
-    private Boolean Imporatant;
+    private Boolean Important;
 
-    public Opravilo(String naslov, String opis, LocalDate startDate, LocalDate endDate, Boolean imporatant) {
+    @Override
+    public String toString() {
+        return "Opravilo{" +
+                "Naslov='" + Naslov + '\'' +
+                ", Opis='" + Opis + '\'' +
+                ", StartDate=" + StartDate.toString() +
+                ", EndDate=" + EndDate.toString() +
+                ", Important=" + Important +
+                '}';
+    }
+
+    public Opravilo(String naslov, String opis, LocalDate startDate, LocalDate endDate, Boolean important) {
         Naslov = naslov;
         Opis = opis;
         StartDate = startDate;
         EndDate = endDate;
-        Imporatant = imporatant;
+        Important = important;
     }
 
     public String getNaslov() {
@@ -49,11 +60,11 @@ public class Opravilo {
         EndDate = endDate;
     }
 
-    public Boolean getImporatant() {
-        return Imporatant;
+    public Boolean getImportant() {
+        return Important;
     }
 
-    public void setImporatant(Boolean imporatant) {
-        Imporatant = imporatant;
+    public void setImportant(Boolean important) {
+        Important = important;
     }
 }
