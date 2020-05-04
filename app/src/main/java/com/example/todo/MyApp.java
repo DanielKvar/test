@@ -22,11 +22,11 @@ public class MyApp extends Application {
         super.onCreate();
     }
 
-    public Tekma getCurrentOpravilo() {
+    public Tekma getCurrentTekma() {
         return Tekma;
     }
 
-    public void setCurrentOpravilo(Tekma tekma) {
+    public void setCurrentTekma(Tekma tekma) {
         Tekma = tekma;
     }
 

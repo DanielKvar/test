@@ -17,6 +17,8 @@ import android.widget.Toast;
 
 import com.example.structure.Tekma;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -59,8 +61,9 @@ public class AddActivity extends AppCompatActivity {
                         endDate = LocalDate.parse(mEndDate.getText().toString(), df);
                     }
                     Tekma tekma = new Tekma(mTitle.getText().toString(), mDescription.getText().toString(), startDate, endDate, important);
-                    App.setCurrentOpravilo(tekma);
+                    App.setCurrentTekma(tekma);
                     Toast.makeText(getApplicationContext(), "Successfuly added", Toast.LENGTH_SHORT).show();
+                    EventBus.getDefault().postSticky(new Tekma(mTitle.getText().toString(), mDescription.getText().toString(), startDate, endDate, important));
                     Intent intent = new Intent(AddActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
