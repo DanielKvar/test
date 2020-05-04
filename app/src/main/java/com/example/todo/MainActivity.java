@@ -6,9 +6,8 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
-import com.example.structure.Opravilo;
+import com.example.structure.Tekma;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -29,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         App = (MyApp)getApplication();
-        Opravilo opravilo = App.getCurrentOpravilo();
-        if(opravilo != null){
-            Toast.makeText(getApplicationContext(), opravilo.toString(), Toast.LENGTH_LONG).show();
+        Tekma tekma = App.getCurrentOpravilo();
+        if(tekma != null){
+            Toast.makeText(getApplicationContext(), tekma.toString(), Toast.LENGTH_LONG).show();
         }
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

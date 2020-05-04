@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.icu.util.Calendar;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -16,11 +15,10 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.structure.Opravilo;
+import com.example.structure.Tekma;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 
 public class AddActivity extends AppCompatActivity {
 
@@ -60,8 +58,8 @@ public class AddActivity extends AppCompatActivity {
                     if(!mEndDate.getText().toString().matches("")){
                         endDate = LocalDate.parse(mEndDate.getText().toString(), df);
                     }
-                    Opravilo opravilo = new Opravilo(mTitle.getText().toString(), mDescription.getText().toString(), startDate, endDate, important);
-                    App.setCurrentOpravilo(opravilo);
+                    Tekma tekma = new Tekma(mTitle.getText().toString(), mDescription.getText().toString(), startDate, endDate, important);
+                    App.setCurrentOpravilo(tekma);
                     Toast.makeText(getApplicationContext(), "Successfuly added", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(AddActivity.this, MainActivity.class);
                     startActivity(intent);

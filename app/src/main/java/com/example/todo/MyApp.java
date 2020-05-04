@@ -4,7 +4,7 @@ import android.app.Application;
 import org.apache.commons.io.FileUtils;
 import android.widget.Toast;
 
-import com.example.structure.Opravilo;
+import com.example.structure.Tekma;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -14,7 +14,7 @@ import java.io.IOException;
 public class MyApp extends Application {
     static private Gson gson;
     static private File file;
-    public Opravilo Opravilo;
+    public Tekma Tekma;
 
 
     @Override
@@ -22,12 +22,12 @@ public class MyApp extends Application {
         super.onCreate();
     }
 
-    public Opravilo getCurrentOpravilo() {
-        return Opravilo;
+    public Tekma getCurrentOpravilo() {
+        return Tekma;
     }
 
-    public void setCurrentOpravilo(Opravilo opravilo) {
-        Opravilo = opravilo;
+    public void setCurrentOpravilo(Tekma tekma) {
+        Tekma = tekma;
     }
 
     public Gson getGson() {
@@ -47,7 +47,7 @@ public class MyApp extends Application {
 
     public void saveToFile() {
         try {
-            FileUtils.writeStringToFile(getFile(), getGson().toJson(Opravilo));
+            FileUtils.writeStringToFile(getFile(), getGson().toJson(Tekma));
         } catch (IOException e) {
             Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
         }
@@ -58,7 +58,7 @@ public class MyApp extends Application {
             return false;
         }
         try {
-            Opravilo = getGson().fromJson(FileUtils.readFileToString(getFile()), Opravilo.class);
+            Tekma = getGson().fromJson(FileUtils.readFileToString(getFile()), Tekma.class);
         } catch (IOException e) {
             return false;
         }

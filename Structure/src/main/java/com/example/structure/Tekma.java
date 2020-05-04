@@ -2,7 +2,7 @@ package com.example.structure;
 
 import java.time.LocalDate;
 
-public class Opravilo {
+public class Tekma {
     private String Naslov;
     private String Opis;
     private LocalDate StartDate;
@@ -20,7 +20,7 @@ public class Opravilo {
                 '}';
     }
 
-    public Opravilo(String naslov, String opis, LocalDate startDate, LocalDate endDate, Boolean important) {
+    public Tekma(String naslov, String opis, LocalDate startDate, LocalDate endDate, Boolean important) {
         Naslov = naslov;
         Opis = opis;
         StartDate = startDate;
