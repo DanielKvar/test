@@ -49,7 +49,7 @@ public class AddActivity extends AppCompatActivity {
                     if (mImportant.isChecked()) {
                         important = true;
                     }
-                    DateTimeFormatter df = DateTimeFormatter.ofPattern("dd-M-yyyy");
+                    DateTimeFormatter df = DateTimeFormatter.ofPattern("d-M-yyyy");
                     LocalDate startDate = null;
                     LocalDate endDate = null;
                     if(!mStartDate.getText().toString().matches("")){

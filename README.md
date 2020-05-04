@@ -1,6 +1,5 @@
-# TODO
-Android application for making a TODO list
+# Koledar Tekem
+Android Application for saving matches (sport/esport)
 
-Naredil bom aplikacijo, ki bo služila kot "TODO list" ali kot oziroma za dodajanje opravil.
-Uporabnik bo lahko dodajal opravila in jim nastavljal čas trajanja oziroma datum poteka. Seveda bo opravila lahko spreminjal, urejal, dodajal in brisal.
-Aplikacija bo sestavljena iz dveh razredov, torej razreda "Oparvilo" in "Uporabnik".
+Naredil bi aplikacijo, ki bi služila kot koledar za beleženje tekem, ki bi si jih radi ogledali, oziroma potekajo. Bolj specifično koledar za športne/ešportne tekme. Uporabnik, bi dodajal tekme (lahko tudi celotnih tekmovanj),
+ njihov čas začetka in čas konca, ter jih seveda brisal, urejal dodajal, itd.
