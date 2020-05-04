@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.structure.Tekma;
+import events.MyEventNewTekma;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -63,7 +64,7 @@ public class AddActivity extends AppCompatActivity {
                     Tekma tekma = new Tekma(mTitle.getText().toString(), mDescription.getText().toString(), startDate, endDate, important);
                     App.setCurrentTekma(tekma);
                     Toast.makeText(getApplicationContext(), "Successfuly added", Toast.LENGTH_SHORT).show();
-                    EventBus.getDefault().postSticky(new Tekma(mTitle.getText().toString(), mDescription.getText().toString(), startDate, endDate, important));
+                    MyEventNewTekma.NewTekma(tekma);
                     Intent intent = new Intent(AddActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
