@@ -10,12 +10,14 @@ import com.google.gson.GsonBuilder;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyApp extends Application {
     static private Gson gson;
     static private File file;
     public Tekma Tekma;
-
+    private List<Tekma> Tekme = new ArrayList<>();
 
     @Override
     public void onCreate() {
@@ -26,8 +28,15 @@ public class MyApp extends Application {
         return Tekma;
     }
 
+    public int Count(){return Tekme.size();}
+
     public void setCurrentTekma(Tekma tekma) {
         Tekma = tekma;
+        Tekme.add(tekma);
+    }
+
+    public Tekma getAtPos(int pos){
+        return Tekme.get(pos);
     }
 
     public Gson getGson() {
