@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5521a3fe-9f27-44df-8e2f-561e45ed1640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/assets/heal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/assets/tree.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -34,6 +32,11 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="1f85f504c113275e8e2edd1180cd662d179ffaca" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iop2R6QuybDAmyL0Q93EyNiaWA" />
@@ -46,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ambulancegame" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -101,38 +104,46 @@
       <option name="project" value="LOCAL" />
       <updated>1602584437897</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ambulance, healing, trees, syringes, moving up and down, speed adjustments">
+      <created>1602598284584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602598284584</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="Ambulance, healing, trees, syringes, moving up and down, speed adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ambulance, healing, trees, syringes, moving up and down, speed adjustments" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="114" key="CommitChangelistDialog2" timestamp="1602584437103">
+    <state x="554" y="114" key="CommitChangelistDialog2" timestamp="1602598283946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="554" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602584437103" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1602584412096">
+    <state x="554" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602598283946" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1602598373766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602584412096" />
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1602598167450">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602598373766" />
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1602598472509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602598167450" />
-    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1602598167450">
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602598472509" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1602598472508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602598167450" />
-    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1602598167450">
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602598472508" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1602598472508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602598167450" />
-    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1602598167450">
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602598472508" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1602598472509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602598167450" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602598472509" />
     <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1602597522821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
