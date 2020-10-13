@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5521a3fe-9f27-44df-8e2f-561e45ed1640" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/assets/pickup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/assets/pickupheal.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/myambulance/game/MyAmbulanceGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/myambulance/game/MyAmbulanceGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/myambulance/game/MyAmbulanceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/myambulance/game/MyAmbulanceGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ambulancegame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/assets" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -111,7 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602598284584</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ambulance, healing, trees, syringes, moving up and down, speed adjustments">
+      <created>1602598486303</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602598486303</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ambulance, healing, trees, syringes, moving up and down, speed adjustments">
+      <created>1602598580351</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602598580351</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -120,30 +144,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="Ambulance, healing, trees, syringes, moving up and down, speed adjustments" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="114" key="CommitChangelistDialog2" timestamp="1602598485676">
+    <state x="554" y="114" key="CommitChangelistDialog2" timestamp="1602598579748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="554" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602598485676" />
+    <state x="554" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602598579748" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1602598373766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602598373766" />
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1602598472509">
+    <state width="1340" height="252" key="GridCell.Tab.0.bottom" timestamp="1602599658431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602598472509" />
-    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1602598472508">
+    <state width="1340" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602599658431" />
+    <state width="1340" height="252" key="GridCell.Tab.0.center" timestamp="1602599658431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602598472508" />
-    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1602598472508">
+    <state width="1340" height="252" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602599658431" />
+    <state width="1340" height="252" key="GridCell.Tab.0.left" timestamp="1602599658431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602598472508" />
-    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1602598472509">
+    <state width="1340" height="252" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602599658431" />
+    <state width="1340" height="252" key="GridCell.Tab.0.right" timestamp="1602599658431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602598472509" />
+    <state width="1340" height="252" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602599658431" />
     <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1602597522821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -160,17 +184,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1340" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602597522821" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602598512850">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602598673466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602598512850" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602598673466" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/com/myambulance/game/MyAmbulanceGame.java</url>
-          <line>195</line>
+          <line>197</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

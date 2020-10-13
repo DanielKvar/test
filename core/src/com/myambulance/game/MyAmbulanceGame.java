@@ -27,7 +27,8 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 	private Texture ambulanceImage;
 	private Texture treeImage;
 	private Texture healImage;
-	private Sound astronautSound;
+	private Sound pickupSound;
+	private Sound pickupHealSound;
 	private SpriteBatch batch;
 	private OrthographicCamera camera;
 	private Rectangle ambulance;
@@ -104,7 +105,8 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 		syringeImage = new Texture(Gdx.files.internal("syringe.png"));
 		treeImage = new Texture(Gdx.files.internal("tree.png"));
 		healImage = new Texture(Gdx.files.internal("heal.png"));
-		//astronautSound = Gdx.audio.newSound(Gdx.files.internal("pick.wav"));
+		pickupSound = Gdx.audio.newSound(Gdx.files.internal("pickup.wav"));
+		pickupHealSound = Gdx.audio.newSound(Gdx.files.internal("pickupheal.wav"));
 
 		// create the camera and the SpriteBatch
 		camera = new OrthographicCamera();
@@ -216,7 +218,6 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 				tree.y -= SPEED_TREE * Gdx.graphics.getDeltaTime();
 				if (tree.y + treeImage.getHeight() < 0) iter.remove();
 				if (tree.overlaps(ambulance)) {
-					//astronautSound.play();
 					ambulanceHealth--;
 				}
 			}
@@ -226,7 +227,7 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 				syringe.y -= SPEED_SYRINGE * Gdx.graphics.getDeltaTime();
 				if (syringe.y + syringeImage.getHeight() < 0) iter.remove(); //From screen
 				if (syringe.overlaps(ambulance)) {
-					//astronautSound.play();
+					pickupSound.play();
 					vaccineScore++;
 					if (vaccineScore %10==0){
 						SPEED_TREE += 66; //speeds up
@@ -242,7 +243,7 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 				heal.y -= SPEED_HEAL * Gdx.graphics.getDeltaTime();
 				if (heal.y + treeImage.getHeight() < 0) iter.remove();
 				if (heal.overlaps(ambulance)) {
-					//astronautSound.play();
+					pickupHealSound.play();
 					ambulanceHealth += 5;
 					iter.remove(); //smart Array enables remove from Array
 				}
@@ -263,7 +264,7 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 		// dispose of all the native resources
 		syringeImage.dispose();
 		ambulanceImage.dispose();
-		astronautSound.dispose();
+		pickupSound.dispose();
 		batch.dispose();
 		font.dispose();
 	}
