@@ -23,12 +23,12 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
  * https://goodstuffnononsense.com/hand-drawn-icons/space-icons/
  */
 public class MyAmbulanceGame extends ApplicationAdapter {
-	private Texture syringeImage;
+	/*private Texture syringeImage;
 	private Texture ambulanceImage;
 	private Texture treeImage;
 	private Texture healImage;
 	private Sound pickupSound;
-	private Sound pickupHealSound;
+	private Sound pickupHealSound;*/
 	private SpriteBatch batch;
 	private OrthographicCamera camera;
 	private Rectangle ambulance;
@@ -38,8 +38,9 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 	private long lastSyringeTime;
 	private long lastTreeTime;
 	private long lastHealTime;
-	private int vaccineScore;
-	private int ambulanceHealth; //Starts with 100
+	private DynamicGameObjectAmbulance dynamicGameObjectAmbulance;
+	/*private int vaccineScore;
+	private int ambulanceHealth; //Starts with 100*/
 
 	private BitmapFont font;
 
@@ -52,7 +53,7 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 	private static long CREATE_TREE_TIME = 1000000000; //ns
 	private static long CREATE_HEAL_TIME = 10000000000L; //ns
 
-	private void commandMoveLeft() {
+	/*private void commandMoveLeft() {
 		ambulance.x -= SPEED * Gdx.graphics.getDeltaTime();
 		if(ambulance.x < 0) ambulance.x = 0;
 	}
@@ -90,12 +91,12 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 
 	private void commandExitGame() {
 		Gdx.app.exit();
-	}
+	}*/
 
 	@Override
 	public void create() {
 
-		font = new BitmapFont();
+		/*font = new BitmapFont();
 		font.getData().setScale(2);
 		vaccineScore = 0;
 		ambulanceHealth = 100;
@@ -106,7 +107,7 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 		treeImage = new Texture(Gdx.files.internal("tree.png"));
 		healImage = new Texture(Gdx.files.internal("heal.png"));
 		pickupSound = Gdx.audio.newSound(Gdx.files.internal("pickup.wav"));
-		pickupHealSound = Gdx.audio.newSound(Gdx.files.internal("pickupheal.wav"));
+		pickupHealSound = Gdx.audio.newSound(Gdx.files.internal("pickupheal.wav"));*/
 
 		// create the camera and the SpriteBatch
 		camera = new OrthographicCamera();
@@ -164,7 +165,7 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 	@Override
 	public void render() { //runs every frame
 		//clear screen
-		Gdx.gl.glClearColor(.2f, .6f, 0f, 1);
+		Gdx.gl.glClearColor(.2f, .5f, 0f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		// tell the camera to update its matrices.
@@ -175,14 +176,14 @@ public class MyAmbulanceGame extends ApplicationAdapter {
 		batch.setProjectionMatrix(camera.combined);
 
 		// process user input
-		if(Gdx.input.isTouched()) commandTouched(); //mouse or touch screen
-		if(Gdx.input.isKeyPressed(Keys.LEFT)) commandMoveLeft();
-		if(Gdx.input.isKeyPressed(Keys.RIGHT)) commandMoveRight();
-		if(Gdx.input.isKeyPressed(Keys.UP)) commandMoveUp();
-		if(Gdx.input.isKeyPressed(Keys.DOWN)) commandMoveDown();
-		if(Gdx.input.isKeyPressed(Keys.A)) commandMoveLeftCorner();
-		if(Gdx.input.isKeyPressed(Keys.S)) commandMoveRightCorner();
-		if(Gdx.input.isKeyPressed(Keys.ESCAPE)) commandExitGame();
+		if(Gdx.input.isTouched()) dynamicGameObjectAmbulance.commandTouched(); //mouse or touch screen
+		if(Gdx.input.isKeyPressed(Keys.LEFT)) dynamicGameObjectAmbulance.commandMoveLeft();
+		if(Gdx.input.isKeyPressed(Keys.RIGHT)) dynamicGameObjectAmbulance.commandMoveRight();
+		if(Gdx.input.isKeyPressed(Keys.UP)) dynamicGameObjectAmbulance.commandMoveUp();
+		if(Gdx.input.isKeyPressed(Keys.DOWN)) dynamicGameObjectAmbulance.commandMoveDown();
+		if(Gdx.input.isKeyPressed(Keys.A)) dynamicGameObjectAmbulance.commandMoveLeftCorner();
+		if(Gdx.input.isKeyPressed(Keys.S)) dynamicGameObjectAmbulance.commandMoveRightCorner();
+		if(Gdx.input.isKeyPressed(Keys.ESCAPE)) dynamicGameObjectAmbulance.commandExitGame();
 
 		// begin a new batch and draw the rocket, astronauts, asteroids
 		batch.begin();

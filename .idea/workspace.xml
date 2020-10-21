@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5521a3fe-9f27-44df-8e2f-561e45ed1640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/assets/pickup.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/assets/pickupheal.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="5521a3fe-9f27-44df-8e2f-561e45ed1640" name="Default Changelist" comment="Sound, readme">
+      <change afterPath="$PROJECT_DIR$/core/src/com/myambulance/game/Assets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/com/myambulance/game/DynamicGameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/com/myambulance/game/DynamicGameObjectAmbulance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/com/myambulance/game/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/com/myambulance/game/GameObjectScore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -19,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/myambulance/game/MyAmbulanceGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/myambulance/game/MyAmbulanceGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterDir="false" />
@@ -40,6 +37,13 @@
         <projects_view />
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -135,59 +139,79 @@
       <option name="project" value="LOCAL" />
       <updated>1602598580351</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Sound, readme">
+      <created>1602599758589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602599758589</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Ambulance, healing, trees, syringes, moving up and down, speed adjustments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ambulance, healing, trees, syringes, moving up and down, speed adjustments" />
+    <MESSAGE value="Sound, readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sound, readme" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="114" key="CommitChangelistDialog2" timestamp="1602598579748">
+    <state x="785" y="311" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602600052995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="554" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602598579748" />
+    <state x="785" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602600052995" />
+    <state x="1530" y="408" key="#com.intellij.ide.util.MemberChooser" timestamp="1603271887135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1530" y="408" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603271887135" />
+    <state x="554" y="114" key="CommitChangelistDialog2" timestamp="1602599926061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="554" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602599926061" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1602598373766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602598373766" />
-    <state width="1340" height="252" key="GridCell.Tab.0.bottom" timestamp="1602599658431">
+    <state width="1340" height="252" key="GridCell.Tab.0.bottom" timestamp="1602754239098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602599658431" />
-    <state width="1340" height="252" key="GridCell.Tab.0.center" timestamp="1602599658431">
+    <state width="1340" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602754239098" />
+    <state width="1340" height="252" key="GridCell.Tab.0.center" timestamp="1602754239098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="252" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602599658431" />
-    <state width="1340" height="252" key="GridCell.Tab.0.left" timestamp="1602599658431">
+    <state width="1340" height="252" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602754239098" />
+    <state width="1340" height="252" key="GridCell.Tab.0.left" timestamp="1602754239098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="252" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602599658431" />
-    <state width="1340" height="252" key="GridCell.Tab.0.right" timestamp="1602599658431">
+    <state width="1340" height="252" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602754239098" />
+    <state width="1340" height="252" key="GridCell.Tab.0.right" timestamp="1602754239098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="252" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602599658431" />
-    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1602597522821">
+    <state width="1340" height="252" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602754239098" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1602600629997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602597522821" />
-    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1602597522821">
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602600629997" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1602600629996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="328" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602597522821" />
-    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1602597522821">
+    <state width="1340" height="328" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602600629996" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1602600629996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="328" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602597522821" />
-    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1602597522821">
+    <state width="1340" height="328" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602600629996" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1602600629997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602597522821" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602598673466">
+    <state width="1340" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602600629997" />
+    <state x="828" y="363" key="RollbackChangesDialog" timestamp="1602599842091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602598673466" />
+    <state x="828" y="363" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602599842091" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602599992901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602599992901" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
